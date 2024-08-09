@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boeing 747-8I Checklist</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/checklist.css">
+  <script src="JS/checklist.js" defer></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="index.html" class="home-button">
+      <img src="images/planelogo.png" alt="Home" />
+    </a>
+    <div class="navigation">
+      <ul>
+        <li><a href="b-747-preflight.html">Pre-Flight</a></li>
+        <li><a href="b-747-FMC.html">Flight Management Computer</a></li>
+        <li><a href="b-747-FCU.html">Flight Control Unit</a></li>
+        <li><a href="b-747-engine-start.html">Engine Start</a></li>
+        <li><a href="b-747-taxi.html">Taxi</a></li>
+        <li><a href="b-747-takeoff.html">Takeoff</a></li>
+        <li><a href="b-747-climb.html">Climb</a></li>
+        <li><a href="b-747-cruise.html">Cruise</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <h1>Boeing 747-8I Pre-Flight</h1>
+    <div class="checklist-container">
+      <ul class="checklist">
+        <li>
+          <h2>TAKEOFF</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">THROTTLE to TOGA/MAX</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">ROTATE at 160 knots</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">GEAR to UP</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">TAXI LIGHTS to OFF</label>
+        </li>
+      </ul>
+      <div class="button-div">
+        <button id="check-button">Check All</button>
+        <button id="reset-button">Reset All</button>
+        <a href="b-747-FCU.html">
+          <button id="next-button">Next Checklist ➤</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
