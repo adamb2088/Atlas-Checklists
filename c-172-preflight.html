@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cessna 172 Checklist</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/checklist.css">
+  <script src="JS/checklist.js" defer></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="index.html" class="home-button">
+      <img src="images/planelogo.png" alt="Home" />
+    </a>
+    <div class="navigation">
+      <ul>
+        <li><a href="c-172-preflight.html">Pre-Flight</a></li>
+        <li><a href="c-172-engine-start.html">Engine Start</a></li>
+        <li><a href="c-172-taxi-to-runway.html">Taxi to Runway</a></li>
+        <li><a href="c-172-at-holding-point.html">At Holding Point for Runway</a></li>
+        <li><a href="c-172-engine-run-up.html">Engine Run-UP</a></li>
+        <li><a href="c-172-final-checks.html">Final Checks</a></li>
+        <li><a href="c-172-takeoff.html">Takeoff</a></li>
+        <li><a href="c-172-climb.html">Climb</a></li>
+        <li><a href="c-172-cruise.html">Cruise</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <h1>Cessna 172 Pre-Flight</h1>
+    <div class="checklist-container">
+      <ul class="checklist">
+        <li>
+          <h2>FUEL</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">FUEL SELECTOR to BOTH / CENTER</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">FUEL SHUTOFF to OPEN / IN</label>
+        </li>
+
+        <li>
+          <h2>THROTTLE & MIXTURE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">MIXTURE to IDLE / CUTOFF / OUT</label>
+        </li>
+
+        <li>
+          <h2>PILOT INSTRUMENT PANEL</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">STANDBY BATTERY to TEST</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task5">
+          <label for="task5">STANDBY BATTERY to ARM</label>
+        </li>
+
+        <li>
+          <h2>PRIMARY FLIGHT DISPLAY</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task6">
+          <label for="task6">Confirm Bus E Volts > 24</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task7">
+          <label for="task7">Confirm Bus M Volts < 1.5 </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task8">
+          <label for="task8">Confirm Bus E Amps < 0 </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task9">
+          <label for="task9"> Confirm STANDBY BATTERY is displayed in annunciator messages </label>
+        </li>
+        <li>
+          <h2>MASTER</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task10">
+          <label for="task10">BATTERY to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task11">
+          <label for="task11">ALTERNATOR to ON</label>
+        </li>
+      </ul>
+      <div class="button-div">
+        <button id="check-button">Check All</button>
+        <button id="reset-button">Reset All</button>
+        <a href="c-172-engine-start.html">
+          <button id="next-button">Next Checklist ➤</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
