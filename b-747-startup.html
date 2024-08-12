@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airplane Checklist</title>
+  <link rel="stylesheet" href="CSS/checklist.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <a href="index.html"><img src="images/planelogo.png" alt="planelogo"> </a>
+    <div class="links">
+      <a href="#" onclick="showChecklist('preFlight')">Pre-Flight</a>
+      <a href="#" onclick="showChecklist('FMC')">Flight Management Computer</a>
+      <a href="#" onclick="showChecklist('FCU')">Flight Control Unit</a>
+      <a href="#" onclick="showChecklist('engineStart')">Engine Start</a>
+      <a href="#" onclick="showChecklist('taxi')">Taxi To Runway</a>
+      <a href="#" onclick="showChecklist('takeOff')">Take Off</a>
+      <a href="#" onclick="showChecklist('climb')">Climb</a>
+      <a href="#" onclick="showChecklist('cruise')">Cruise</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="preFlight" class="checklist active">
+      <h1>Pre-Flight Checklist</h2>
+        <ul>
+          <li>
+            <h2>POWER SECTION</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task1">
+            <label for="task1">BATTERY --- uncaged, ON, re-caged</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task2">
+            <label for="task2">STANDBY POWER to AUTO</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task3">
+            <label for="task3">EXTERIOR POWER to ON, if available</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task4">
+            <label for="task4">APU to START, then ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task5">
+            <label for="task5">Wait for APU GEN 1 and APU GEN 2 to illuminate</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task6">
+            <label for="task6">APU GEN 1 to ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task7">
+            <label for="task7">APU GEN 2 to ON</label>
+          </li>
+          <li>
+            <h2>IRS SECTIONS</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task8">
+            <label for="task8">NAV SELECTORS to NAV</label>
+          </li>
+          <li>
+            <h2>EMERGENCY LIGHTS</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task9">
+            <label for="task9">EMERGENCY LIGHTS to ARMED, then covered</label>
+          </li>
+          <li>
+            <h2>LIGHTS</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task10">
+            <label for="task10">NAV LIGHTS to ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task11">
+            <label for="task11">STROBE to ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task12">
+            <label for="task12">BEACON to ON</label>
+          </li>
+          <li>
+            <h2>WINDOW HEAT</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task13">
+            <label for="task13">WINDOW HEAT to ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task14">
+            <label for="task14">WING ANTI ICE to ON</label>
+          </li>
+
+        </ul>
+    </div>
+
+    <div id="FMC" class="checklist">
+      <h1>Flight Management Computer</h1>
+      <ul>
+        <li>
+          <h2>PROGRAM FLIGHT PLAN</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task15">
+          <label for="task15">Press POS INIT soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task16">
+          <label for="task16">Press GPS POS soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task17">
+          <label for="task17">Press SET IRS POS soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task18">
+          <label for="task18">Set REF AIRPORT</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task19">
+          <label for="task19">Press ROUTE soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task20">
+          <label for="task20">Set ORIGIN (departure airfield ICAO code)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task21">
+          <label for="task21">Set DESTINATION (destination airfield ICAO code)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task22">
+          <label for="task22">Set RUNWAY (departure)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task23">
+          <label for="task23">Press NEXT PAGE button and set route if using airways</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task24">
+          <label for="task24">Press ACTIVATE soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task25">
+          <label for="task25">Press EXEC button</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task26">
+          <label for="task26">Press PERF INIT soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task27">
+          <label for="task27">Set CRZ ALT (flight level e.g. 360 for 36,000ft)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task28">
+          <label for="task28">Set COST INDEX (e.g. 100)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task29">
+          <label for="task29">Press ZRW soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task30">
+          <label for="task30">Set RESERVES (e.g. 1 = 1,000lb fuel) </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task31">
+          <label for="task31">Press EXEC button</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task32">
+          <label for="task32">Press THRUST LIM soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task33">
+          <label for="task33">Press TAKEOFF soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task34">
+          <label for="task34">Set FLAPS as required</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task35">
+          <label for="task35">Press CG soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task36">
+          <label for="task36">Press V1 soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task37">
+          <label for="task37">Press VR soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task38">
+          <label for="task38">Press V2 soft-key</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task39">
+          <label for="task39">Press DEP ARR button</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task40">
+          <label for="task40">Configure SID and STAR for route</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task41">
+          <label for="task41">Press LEGS button</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task42">
+          <label for="task42">Resolve any discontinuities (select the first line following a discontinuity, and then
+            selct the empty line to close the gap)</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="FCU" class="checklist">
+      <h1>Flight Control Unit</h1>
+      <ul>
+        <li>
+          <h2>PROGRAM FCU</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task43">
+          <label for="task43">Callibrate ALTIMETERS for departure airport</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task44">
+          <label for="task44">FLIGHT DIRECTORS to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task45">
+          <label for="task45">Preselect departure runway heading</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task46">
+          <label for="task46">Set ALTITUDE for INITIAL CLIMB</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task47">
+          <label for="task47">Set IAS </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task48">
+          <label for="task48">Preselect LNAV, VNAV</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task49">
+          <label for="task49">Preselect vertical speed as backup</label>
+        </li>
+        <li>
+          <h2>PROGRAM ECAS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task50">
+          <label for="task50">Set STAB TRIM according to indicator</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="engineStart" class="checklist">
+      <h1>Engine Start</h1>
+      <ul>
+        <li>
+          <h2>PREPARE FOR ENGINE START</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task51">
+          <label for="task51">MAIN 1 to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task52">
+          <label for="task52">MAIN 2 OVRD to ON </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task53">
+          <label for="task53">MAIN 3 OVRD to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task54">
+          <label for="task54">MAIN 4 to ON</label>
+        </li>
+        <li>
+          <h2>ENGINE BLEED</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task55">
+          <label for="task55">CHECK APU to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task56">
+          <label for="task56">ENGINE BLEED 4, 3, 2, 1 to ON</label>
+        </li>
+        <li>
+          <h2>START ENGINE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task57">
+          <label for="task57">STARTER ENGINES 1, 2, 3, 4 to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task58">
+          <label for="task58">Monitor N2 for engines</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task59">
+          <label for="task59">FUEL CONTROL LEVER to RUN</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task60">
+          <label for="task60">APU SELECTOR to OFF</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task61">
+          <label for="task61">PUMPS 1, 2, 3, 4 to AUTO</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task62">
+          <label for="task62">PACKS 1, 2, 3, to ON</label>
+        </li>
+        <li>
+          <h2>LIGHTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task63">
+          <label for="task63">TAXI LIGHTS to ON</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="taxi" class="checklist">
+      <h1>Taxi To Runway</h1>
+      <ul>
+        <li>
+          <h2>PUSHBACK</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task64">
+          <label for="task64">Plan Pushback</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task65">
+          <label for="task65">Release Parking Brake</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task66">
+          <label for="task66">Perform Pushback</label>
+        </li>
+        <li>
+          <h2>TAXI TO RUNWAY</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task67">
+          <label for="task67">FLAPS to TAKEOFF POSITION</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task68">
+          <label for="task68">Check for CAS messages</label>
+        </li>
+        <li>
+          <h2>LIGHTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task69">
+          <label for="task69">LANDING LIGHTS to ON</label>
+        </li>
+        <li>
+          <h2>TCAS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task70">
+          <label for="task70">MODE SELECTOR to TA/RA</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="takeOff" class="checklist">
+      <h1>Take Off Checklist</h1>
+      <ul>
+        <li>
+          <h2>TAKEOFF</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task71">
+          <label for="task71">THROTTLE to TOGA/MAX</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task72">
+          <label for="task72">ROTATE at 160 knots</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task73">
+          <label for="task73">GEAR to UP</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task74">
+          <label for="task74">TAXI LIGHTS to OFF</label>
+        </li>
+      </ul>
+    </div>
+
+    <div id="climb" class="checklist">
+      <h1>Climb Checklist</h1>
+      <ul>
+        <li>
+          <h2>CLIMB</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task75">
+          <label for="task75">Manage FLAPS during acceleration</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task76">
+          <label for="task76">Engage AUTO-THROTTLE</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task77">
+          <label for="task77">Check AUTO PILOT</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task78">
+          <label for="task78">Engage AUTO PILOT</label>
+        </li>
+      </ul>
+    </div>
+
+    <div id="cruise" class="checklist">
+      <h1>Cruise Checklist</h1>
+      <ul>
+        <li>
+          <h2>CRUISE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task79">
+          <label for="task79">LANDING LIGHTS to OFF at 10,000ft AGL</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task80">
+          <label for="task80">Monitor HEADING for waypoints</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task81">
+          <label for="task81">Indicated Airspeed <= 250 knots below 10,000ft</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task82">
+          <label for="task82">Switch to standard barometric pressure above transition altitude</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task83">
+          <label for="task83">LANDING LIGHTS to ON, below 10,000ft</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task84">
+          <label for="task84">LANDING LIGHTS to OFF, below 10,000ft</label>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="JS/checklist.js"></script>
+  <script src="JS/button.js"></script>
+</body>
+
+</html>

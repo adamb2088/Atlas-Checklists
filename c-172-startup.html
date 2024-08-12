@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airplane Checklist</title>
+  <link rel="stylesheet" href="CSS/checklist.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <a href="index.html"><img src="images/planelogo.png" alt="planelogo"> </a>
+    <div class="links">
+      <a href="#" onclick="showChecklist('preFlight')">Pre-Flight</a>
+      <a href="#" onclick="showChecklist('engineStart')">Engine Start</a>
+      <a href="#" onclick="showChecklist('taxi')">Taxi To Runway</a>
+      <a href="#" onclick="showChecklist('atHoldingPoint')">At Holding Point for Runway</a>
+      <a href="#" onclick="showChecklist('engineRunUp')">Engine Run-Up</a>
+      <a href="#" onclick="showChecklist('finalChecks')">Final Checks</a>
+      <a href="#" onclick="showChecklist('takeOff')">Take Off</a>
+      <a href="#" onclick="showChecklist('climb')">Climb</a>
+      <a href="#" onclick="showChecklist('cruise')">Cruise</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="preFlight" class="checklist active">
+      <h1>Pre-Flight Checklist</h2>
+        <ul>
+          <li>
+            <h2>FUEL</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task1">
+            <label for="task1">FUEL SELECTOR to BOTH / CENTER</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task2">
+            <label for="task2">FUEL VALVE to OPEN / IN</label>
+          </li>
+
+          <li>
+            <h2>THROTTLE & MIXTURE</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task3">
+            <label for="task3">MIXTURE to IDLE / CUTOFF / OUT</label>
+          </li>
+
+          <li>
+            <h2>PILOT INSTRUMENT PANEL</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task4">
+            <label for="task4">STANDBY BATTERY to TEST</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task5">
+            <label for="task5">STANDBY BATTERY to ARM</label>
+          </li>
+
+          <li>
+            <h2>PRIMARY FLIGHT DISPLAY</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task6">
+            <label for="task6">Confirm Bus E Volts > 24</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task7">
+            <label for="task7">Confirm Bus M Volts < 1.5 </label>
+          </li>
+          <li>
+            <input type="checkbox" id="task8">
+            <label for="task8">Confirm Bus E Amps < 0 </label>
+          </li>
+          <li>
+            <input type="checkbox" id="task9">
+            <label for="task9"> Confirm STANDBY BATTERY is displayed in annunciator messages </label>
+          </li>
+          <li>
+            <h2>MASTER</h2>
+          </li>
+          <li>
+            <input type="checkbox" id="task10">
+            <label for="task10">BATTERY to ON</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task11">
+            <label for="task11">ALTERNATOR to ON</label>
+          </li>
+
+        </ul>
+    </div>
+
+    <div id="engineStart" class="checklist">
+      <h1>Engine Start Checklist</h1>
+      <ul>
+        <li>
+          <h2>LIGHTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">BEACON to ON</label>
+        </li>
+
+        <li>
+          <h2>THROTTLE & MIXTURE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">THROTTLE to 1/4" IN</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">MIXTURE to RICH / IN</label>
+        </li>
+
+        <li>
+          <h2>FUEL PUMP SWITCH</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">FUEL PUMP to ON / UP for 3 to 5 seconds, then OFF / DOWN</label>
+        </li>
+
+        <li>
+          <h2>THROTTLE & MIXTURE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task5">
+          <label for="task5">MIXTURE to LEAN / 30%</label>
+        </li>
+
+        <li>
+          <h2>MAGNETOS / IGNITION</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task6">
+          <label for="task6">Rotate KEY to START</label>
+        </li>
+
+        <li>
+          <h2>THROTTLE & MIXTURE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task7">
+          <label for="task7">MIXTURE to RICH / IN </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task8">
+          <label for="task8">THROTTLE to 1,000 RPM </label>
+        </li>
+
+        <li>
+          <h2>PRIMARY FLIGHT DISPLAY</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task9">
+          <label for="task9">Confirm OIL TEMP in GREEN AREA</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task10">
+          <label for="task10">Confirm OIL PRESS in GREEN AREA</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task11">
+          <label for="task11">Confirm low volts annunciator has been cleared </label>
+        </li>
+
+        <li>
+          <h2>AVIONICS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task12">
+          <label for="task12">BUS 1 to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task13">
+          <label for="task13">BUS 2 to ON</label>
+        </li>
+
+        <li>
+          <h2>NAVIGATION DISPLAY</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task14">
+          <label for="task14">Wait for navigation display bootup, then press bottom right softkey</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task15">
+          <label for="task15">Program flight plan as required</label>
+        </li>
+
+        <li>
+          <h2>PRIMARY FLIGHT INSTRUMENTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task16">
+          <label for="task16">Calibrate Altimeters</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="taxi" class="checklist">
+      <h1>Taxi To Runway</h1>
+      <ul>
+        <li>
+          <h2>LIGHTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">TAXI to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">NAV to ON</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="atHoldingPoint" class="checklist">
+      <h1>At Holding Point for Runway</h1>
+      <ul>
+        <li>
+          <h2>PRIMARY CONTROLS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">PARKING BRAKE to ON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">Test primary controls surfaces (ailerons, elevators, rudders)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">PARKING BRAKE to OFF, test toe brakes</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">PARKING BRAKES to ON</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="engineRunUp" class="checklist">
+      <h1>Engine Run-Up Checklist</h1>
+      <ul>
+        <li>
+          <h2>ENGINE TESTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">Set THROTTLE for 1,800 RPM </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">Rotate MAGNETOS to L - observe no more than 150 drop in RPM</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">Rotate MAGNETOS to R - observe no more than 150 drop in RPM</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">Rotate MAGNETOS to BOTH</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task5">
+          <label for="task5">Set THROTTLE to IDLE / OUT - observe 600 to 650 RPM</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task6">
+          <label for="task6">Set THROTTLE to 1,000 RPM</label>
+        </li>
+
+        <li>
+          <h2>LIGHTS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task7">
+          <label for="task7">STROBE to ON / UP </label>
+        </li>
+        <li>
+          <input type="checkbox" id="task8">
+          <label for="task8">LANDING to ON / UP</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="finalChecks" class="checklist">
+      <h1>Final Checks</h1>
+      <ul>
+        <li>
+          <h2>COMMUNICATIONS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">Check no annunciations displayed on primary flight display</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">COM radios as required</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">NAV radios as required</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">Transponder as required</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task5">
+          <label for="task5">Garmin CDI mode as required</label>
+        </li>
+
+        <li>
+          <h2>PILOT SWITCH PANEL </h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task6">
+          <label for="task6">PILOT HEAT as required</label>
+        </li>
+
+        <li>
+          <h2>THROTTLE & MIXTURE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task7">
+          <label for="task7">MIXTURE to RICH / IN</label>
+        </li>
+
+        <li>
+          <h2>PRIMARY FLIGHT CONTROLS</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task8">
+          <label for="task8">FLAPS as required</label>
+        </li>
+      </ul>
+    </div>
+
+    <div id="takeOff" class="checklist">
+      <h1>Take Off Checklist</h1>
+      <ul>
+        <li>
+          <h2>Takeoff</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">THROTTLE to FULL (2300 RPM minimum)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">Rotate at 55 knots</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task3">
+          <label for="task3">Initial climb 70 to 80 knots</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task4">
+          <label for="task4">FLAPS to UP at 300ft AGL</label>
+        </li>
+      </ul>
+    </div>
+
+    <div id="climb" class="checklist">
+      <h1>Climb Checklist</h1>
+      <ul>
+        <li>
+          <h2>CLIMB</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">TAXI and LANDING LIGHTS to OFF above 1,000ft AGL</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">MIXTURE to LEAN above 3,000ft AGL</label>
+        </li>
+      </ul>
+    </div>
+
+    <div id="cruise" class="checklist">
+      <h1>Cruise Checklist</h1>
+      <ul>
+        <li>
+          <h2>CRUISE</h2>
+        </li>
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">THROTTLE to 75%</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">MIXTURE as required</label>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="JS/checklist.js"></script>
+  <script src="JS/button.js"></script>
+</body>
+
+</html>

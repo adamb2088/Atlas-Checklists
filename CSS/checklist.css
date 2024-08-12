@@ -1,32 +1,55 @@
-.checklist-container {
-    background-color: #ffffff00;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    margin: 5% 0 0 8%;
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.checklist-container h1 {
+.sidebar {
+    width: 250px;
+    background-color: #004997;
+    padding: 15px;
+    height: 100vh;
     text-align: center;
-    font-size: 24px;
-    color: #333;
+    position: fixed;
+}
+
+.links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 1rem;
+}
+
+.links a:hover {
+    background-color: #007bff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
 }
 
 .checklist {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 80%;
+    display: none;
 }
 
-.checklist li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 20px;
-    border: 1px solid #dddddd00;
-    border-radius: 4px;
-    width: 1000px;
+.checklist.active {
+    display: block;
+}
+
+.content li {
+    list-style: none;
+    text-decoration: none;
+    margin: 30px 0 0 45px;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
 }
 
 input[type="checkbox"] {
@@ -42,7 +65,6 @@ label {
     width: 50%;
 }
 
-/* Reset Button Styling */
 #reset-button,
 #check-button,
 #next-button {
@@ -73,7 +95,6 @@ label {
     width: 500px;
 }
 
-.button-div a{
+.button-div a {
     text-decoration: none;
-    
 }
